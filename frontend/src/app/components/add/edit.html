@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>เพิ่ม หรือ แก้ไข</h2>
+<mat-dialog-content class="mat-typography">
+  <mat-grid-list cols="1" rowHeight="10:1">
+    <mat-form-field>
+      <mat-label>ชื่อ</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>สรรพนาม</mat-label>
+      <mat-select>
+        <mat-option value="one">แท่ง</mat-option>
+        <mat-option value="two">ตัว</mat-option>
+        <mat-option value="three">เครื่อง</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>หมวดหมู่</mat-label>
+      <mat-select>
+        <mat-option value="one">เครื่องเขียน</mat-option>
+        <mat-option value="two">เฟอนิเจอร์</mat-option>
+        <mat-option value="three">อุปกรณ์อิเล็กทรอนิกส์</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-grid-list>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button color="accent" mat-dialog-close>ปิด</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="true" cdkFocusInitial>บันทึก</button>
+</mat-dialog-actions>

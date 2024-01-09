@@ -1,0 +1,61 @@
+section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures that the content is centered vertically on the screen */
+  }
+
+  :host {
+    display: block;
+    background-color: #f0f0f0; /* Set your desired background color */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .center-text {
+    text-align: center;
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .action-buttons button {
+    margin-right: 8px; /* Adjust the margin to your desired spacing */
+  }
